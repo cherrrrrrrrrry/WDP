@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 4em;
+	margin-bottom: .25em;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+	font-size: 4em;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 400;
+	color: #f85e28;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 2em;
+	color: #00887a;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+hr {
+	width: 2.5em;
+	border: none;
+	height: .25em;
+	background-color: #00887a;
+	margin: .5em auto;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em;
+	font-weight: bold;
+	color: rgba(0, 0, 0, .75);
+	background-color: white;
+}
+
+.icon {
+	width: 2.75em;
+	height: auto;
+	padding: .5em;
+}
+
+.wrapper {
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.block {
+	padding: 7.5em 0;
+}
+
+.block-clr {
+	background-color: #ccfcee;
+}
+
+.clr {
+	font-size: .75em;
+	color: #00887a;
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+}
+
+.items,
+.line {
+	display: flex;
+	justify-content: space-around;
+}
+
+.item {
+	margin: .5em;
+	padding: 1em;
+	cursor: default;
+}
+
+.slider-m {
+	display: none;
+}
+
+.wrapper>p {
+	margin: 0 .5em 5em .5em;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+button,
+main .preview .buttons a {
+	border: none;
+	padding: .5em 1em;
+	color: #00887a;
+	background-color: transparent;
+	font-size: 1.25em;
+	font-weight: bold;
+	border: 2px solid #00887a;
+	text-transform: uppercase;
+	transition: .25s;
+	cursor: pointer;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+main .preview .buttons a {
+	border: 2px solid #00887a !important;
+}
+
+button:hover,
+main .preview .buttons a:hover {
+	border-radius: .25em;
+	background-color: #00887a;
+	color: white;
+}
+
+#toTop {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+	display: none;
+	padding: .5em .75em;
+	background-color: rgba(0, 0, 0, .75);
+	border-radius: 50%;
+	opacity: .25;
+}
+
+#toTop:hover {
+	background-color: #00887a;
+}
+
+.to-top img {
+	width: 2em;
+	height: auto;
+}

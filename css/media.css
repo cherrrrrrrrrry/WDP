@@ -1,0 +1,149 @@
+@media screen and (max-width: 980px) {
+	header {
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		z-index: 9000;
+		justify-content: flex-start;
+	}
+
+	header nav a.menu-trigger {
+		display: block;
+		font-size: 3em;
+		color: #00887a;
+		position: fixed;
+		right: .25em;
+		top: .65em;
+		padding: 0 .25em;
+		z-index: 9010;
+	}
+	
+	header nav ul {
+		display: none;
+		position: fixed;
+		z-index: 9020;
+		right: 0;
+		top: 7.25em;
+		width: 100%;
+		background-color: white;
+	}
+
+	header nav ul li {
+		display: block;
+		text-align: right;
+	}
+	
+	header nav ul li:hover {
+		background-color: #00887a;
+	}
+
+	header nav ul li:hover > a {
+		color: white;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	h2 {
+		font-size: 2.5em;
+	}
+
+	.items,
+	.line {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	
+	.item,
+	.works-slider-m {
+		box-shadow: .25em .25em 1em black;
+	}
+
+	main .about .items .item {
+		background-color: #ccfcee;;
+	}
+	
+	main .services .line .item h3 {
+		color: white;
+	}
+
+	main .services .line .item,
+	main .prices .items .item {
+		background-color: #00887a;
+		color: white;
+	}
+
+	main .prices .items .scale-item {
+		transform: scale(1);
+	}
+	
+	main .prices .items .item button {
+		border-color: white;
+	}
+
+	main .prices .items .item,
+	main .prices .items .item:hover,
+	main .team .items .item,
+	main .team .items .item:hover,
+	main .contacts .items .item {
+		box-shadow: none;
+	}
+
+	.slider-d {
+		display: none;
+	}
+
+	.slider-m {
+		display: block;
+	}
+	
+	main .blog .line .item {
+		width: 100%;
+	}
+
+	main .contacts .items .item {
+		margin: 0 0 2em 0;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	main .contacts form .form-top input,
+	main .contacts form .textarea textarea,
+	main .contacts form > input {
+		font-size: .5em;
+	}
+
+	main .contacts form .form-top input {
+		width: 30%;
+	}
+
+	main .contacts form > input {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.icon {
+		width: 1.75em;
+	}
+
+	header .header-logo .logo {
+		width: 2em;
+	}
+
+	header .header-logo span {
+		font-size: 1.5em;
+	}
+
+	header nav a.menu-trigger {
+		font-size: 2em;
+		top: 1.15em;
+	}
+
+	main .prices .items .item span {
+		margin: 1em;
+	}
+}

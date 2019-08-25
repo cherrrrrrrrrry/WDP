@@ -1,0 +1,362 @@
+body {
+	background-color: white;
+	text-align: center;
+	overflow-x: hidden;
+	color: rgba(0, 0, 0, .75);
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+header .header-logo {
+	align-items: center;
+	display: flex;
+}
+
+header .header-logo img {
+	width: 3.5em;
+	float: left;
+	margin-right: .5em;
+}
+
+header .header-logo span {
+	font-size: 2.25em;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	color: rgba(0, 0, 0, .75);
+	display: block;
+	font-size: 1.25em;
+	padding: 1em;
+	font-style: italic;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+header nav ul li a:hover {
+	color: #00887a;
+}
+
+header nav a.menu-trigger {
+	display: none;
+}
+
+main .preview,
+main .contacts {
+	background-image: url(../i/bckgrnd.jpg);
+	background-attachment: fixed;
+}
+
+main .preview,
+main .contacts {
+	background-color: rgba(0, 0, 0, .75);
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   	main .preview,
+	main .contacts {
+		background-image: none;
+		background-attachment: scroll;
+		background: linear-gradient(45deg, #134e5e, #71b280);
+	}
+}
+
+/*Edge*/
+@supports (-ms-ime-align:auto) and (not (-ms-accelerator:true)) {
+ 	main .preview,
+ 	main .contacts {
+		background-image: none;
+		background-attachment: scroll;
+		background: linear-gradient(45deg, #134e5e, #71b280);
+	}
+
+	main .contacts .items .item h3 {
+		color: white;
+	}
+}
+
+main .preview {
+	padding: 15em 0 2.5em 0;
+}
+
+main .preview .buttons {
+	margin-top: 2.5em;
+	margin-bottom: 5em;
+}
+
+main .preview .buttons a {
+	color: white;
+	padding: 1em;
+	border-color: transparent;
+	display: flex;
+	justify-content: center;
+	margin: 1em 2.5em;
+}
+
+main .preview .down {
+	cursor: pointer;
+	transition: .5s;
+}
+
+main .preview .down:hover {
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+main .contacts .items .item img {
+	background-color: #00887a;
+	border-radius: 1em;
+	transition: .25s;
+}
+
+main .services .line .item,
+main .prices .items .item {
+	background-color: white;
+	transition: .25s;
+}
+
+main .services .line .item:hover {
+	background-color: #00887a;
+	color: white;
+}
+
+main .services .line .item:hover img {
+	filter: brightness(10);
+}
+
+main .services .line .item:hover,
+main .prices .items .item:hover,
+main .team .items .item:hover {
+	box-shadow: .25em .25em 1em #c3c3c3;
+	transition: .25s;
+}
+
+main .services .line .item:hover > h3 {
+	color: white;
+}
+
+main .portfolio img {
+	width: 100%;
+}
+
+main .portfolio .works-slider-d .overlay {
+	display: flex;
+	position: absolute;
+	height: 50%;
+	width: 3.7%;
+	align-items: center;
+	justify-content: center;
+	color: transparent;
+	z-index: 9000;
+	transition: .25s;
+}
+
+main .portfolio .works-slider-d .overlay:hover {
+	background-color: rgba(0, 0, 0, .75);
+	color: white;
+}
+
+main .portfolio .works-slider-d .overlay-t {
+	top: 0;
+}
+
+main .portfolio .works-slider-d .overlay-b {
+	top: 50%;
+}
+
+main .portfolio button,
+main .prices .items .item button,
+main .blog .line .item .blog-text button {
+	margin-top: 2.5em;
+	margin-bottom: 1em;
+}
+
+main .prices .items .back-item {
+	padding: .5em;
+}
+
+main .prices .items .scale-item {
+	transform: scale(1.1);
+	padding: .5em;
+}
+
+main .prices .items .item .prices-titles {
+	margin-bottom: 2.5em;
+	color: white;
+	background-color: #00887a;
+	padding: 2.5em;
+	border-bottom: 2px solid white;
+}
+
+main .prices .items .item .prices-titles h4 b {
+	font-size: 2em;
+}
+
+main .prices .items .item .prices-titles h3 {
+	line-height: 2em;
+	color: white;
+}
+
+main .prices .items .item span {
+	display: block;
+	padding: 1em 0;
+	font-size: 1.25em;
+	border-bottom: 1px solid #f85e28;
+	margin: 0 1em;
+}
+
+main .team .items .item {
+	background-color: #ccfcee;
+}
+
+main .team .items .item .team-titles {
+	padding: 1.5em 0;
+}
+
+main .team .items .item .team-titles h5 {
+	color: #f85e28;
+}
+
+main .team .items .item h3 {
+	line-height: 2em;
+	color: rgba(0, 0, 0, .75);
+}
+
+main .team .items .item > img {
+	width: 100%;
+}
+
+main .team .items .item .team-social img {
+	display: inline-block;
+	width: 2em;
+	transition: .1s;
+}
+
+main .team .items .item .team-social img:hover {
+	opacity: .75;
+}
+
+main .blog .line .item {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+main .blog .line .item .blog-text button {
+	background-color: transparent;
+	color: #00887a;
+
+}
+
+main .blog .line .item .blog-text button:hover {
+	background-color: #00887a;
+	color: white;
+}
+
+main .blog .line .item img {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: .25s;
+}
+
+main .blog .line:hover .item img {
+	filter: grayscale(0);
+}
+
+main .blog .line .item .blog-text {
+	margin: 2.5em;
+}
+
+main .contacts .items-center {
+	display: flex;
+	justify-content: center;
+}
+
+main .contacts .items .item {
+	width: 12em;
+	margin: 0 1em 5em 1em;
+	background-color: rgba(0, 0, 0, .75);
+	padding: 2em 1em;
+}
+
+main .contacts .items .item:hover img {
+	background-color: white;
+}
+
+main .contacts .items .item h3 {
+	line-height: 1.25em;
+	color: white;
+}
+
+main .contacts form .form-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5em;
+}
+
+main .contacts form .form-top input,
+main .contacts form .textarea textarea, 
+main .contacts form > input {
+	border: none;
+	padding: 1em;
+	font-size: 1.25em;
+	color: rgba(0, 0, 0, .75);
+}
+
+main .contacts form .form-top input {
+	width: 40%;
+	border-radius: .5em;
+}
+
+main .contacts form .textarea {
+	overflow: hidden;
+	border-radius: .75em;
+	background-color: #00887a;
+	margin-bottom: 1em;
+}
+
+main .contacts form .textarea textarea {
+	resize: none;
+	width: 100%;
+	height: 15em;
+	font-family: serif;
+}
+
+main .contacts form > input {
+	background-color: white;
+	padding: 1em 3em;
+	border-radius: .5em;
+	transition: .25s;
+	float: right;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+main .contacts form > input:hover {
+	color: white;
+	background-color: #00887a;
+}
+
+footer {
+	font-size: 1.25em;
+}
+
+/*
+#f85e28;
+#fff;
+#ccfcee;
+#134e5e;
+#71b280;
+#00887a;
+rgba(0, 0, 0, .75);
+*/
